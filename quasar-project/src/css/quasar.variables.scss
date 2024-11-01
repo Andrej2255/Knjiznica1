@@ -1,0 +1,50 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+
+$primary   : #3F51B5; // Primjer svjetlije boje
+$secondary : #4CAF50; // Zelenija boja
+$accent    : #FF4081; // Kontrastna boja
+
+$dark      : #2C2C2C; // Tamnija pozadina
+$dark-page : #1A1A1A; // Tamna stranica
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #2196F3;
+$warning   : #FFC107;
+
+// Global Styles
+body {
+  font-family: 'Roboto', sans-serif; // Dodajte Google font za bolju tipografiju
+  background-color: $dark-page;
+  color: white; // Boja teksta
+  line-height: 1.6; // Povećanje razmaka između redaka
+}
+
+h1, h2, h3 {
+  font-weight: 500; // Normalizacija težine naslova
+}
+
+.q-btn {
+  transition: background-color 0.3s, transform 0.3s; // Animacija dugmadi
+  &:hover {
+    background-color: lighten($primary, 10%); // Svijetlija boja pri hoveru
+    transform: scale(1.05); // Lagano povećanje dugmeta
+  }
+}
+
+.q-card {
+  background-color: $dark; // Tamna pozadina za kartice
+  border-radius: 10px; // Zaobljeni rubovi
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); // Dodavanje sjene
+  transition: transform 0.3s;
+  &:hover {
+    transform: translateY(-5px); // Lagano podizanje kartice
+  }
+}
+
+// Dodavanje stilova za mapu
+#map {
+  height: 100vh; // Puni visina prozora
+  width: 100%; // Puni širina prozora
+}
