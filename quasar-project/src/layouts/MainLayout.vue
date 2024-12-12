@@ -102,6 +102,12 @@ const linksList = [
     caption: 'Kreirajte račun',
     icon: 'person_add',
     link: '/registracija'
+  },
+  {
+    title: 'Popis Mihaelovih knjiga',
+    caption: 'Popis knjiga',
+    icon: 'person_add',
+    link: '/popisknjiga1'
   }
 ]
 
